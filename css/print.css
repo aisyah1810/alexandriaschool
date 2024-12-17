@@ -1,0 +1,56 @@
+/* CSS untuk gambar di tabel */
+td img {
+    width: 100px;  /* Ukuran lebar gambar */
+    height: 100px; /* Ukuran tinggi gambar */
+    object-fit: cover; /* Pastikan gambar tetap proporsional */
+    border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
+    background-color: #F5EEDC; /* Warna latar belakang gambar */
+}
+
+/* Untuk pencetakan, pastikan gambar tetap kecil */
+@media print {
+    td img {
+        width: 100px;  /* Ukuran lebar gambar saat dicetak */
+        height: 100px; /* Ukuran tinggi gambar saat dicetak */
+    }
+
+    /* Menyembunyikan elemen-elemen lain saat pencetakan */
+    .topnav, .footer, .print-button {
+        display: none;
+    }
+
+    /* Tampilkan tabel dengan border */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+    }
+
+    th {
+        background-color: #A74A4A; /* Warna latar belakang header tabel */
+        color: white;
+    }
+}
+
+/* Style untuk tombol cetak */
+.print-button {
+    background-color: #A74A4A; /* Warna latar belakang tombol cetak */
+    color: #F5EEDC; /* Warna teks tombol */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.print-button:hover {
+    background-color: #872D2D; /* Warna tombol cetak saat hover */
+}

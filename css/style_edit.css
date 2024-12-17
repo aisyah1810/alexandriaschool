@@ -1,0 +1,118 @@
+     /* Styling Umum */
+     body {
+        font-family: 'Poppins', Arial, sans-serif;
+        background-color: #333;
+        margin: 0;
+        padding: 20px;
+        color: #333;
+    }
+
+    /* Gaya Form */
+    form {
+        background-color: #e0d8bf;
+        border: 1px solid #ddd;
+        border-radius: 12px;
+        padding: 20px 30px;
+        max-width: 500px;
+        margin: 50px auto;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        color: #333;
+    }
+
+    /* Gaya Input */
+    form input[type="text"],
+    form input[type="date"],
+    form textarea {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-sizing: border-box;
+        font-size: 16px;
+        background-color: #F5EEDC;
+        color: #555;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* Gaya Dropdown Select */
+    form select {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background-color: #F5EEDC;
+        color: #555;
+        box-sizing: border-box;
+        appearance: none;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        padding-right: 40px;
+        background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%204%205%22%3E%3Cpath%20fill%3D%22%23555%22%20d%3D%22M2%204%20L0%202h4z%22/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 12px center;
+        background-size: 12px;
+    }
+
+    /* Fokus pada Input dan Dropdown */
+    form input[type="text"]:focus,
+    form input[type="date"]:focus,
+    form textarea:focus,
+    form select:focus {
+        border-color: #555;
+        box-shadow: 0 0 5px rgba(85, 85, 85, 0.3);
+        outline: none;
+    }
+
+    /* Gaya Tombol */
+    form button,
+    form a {
+        display: inline-block;
+        text-align: center;
+        padding: 12px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 8px;
+        border: none;
+        background-color: #333;
+        color: #fff;
+        cursor: pointer;
+        margin-top: 10px;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    form button:hover,
+    form a:hover {
+        background-color: #555;
+        box-shadow: 0 5px 10px rgba(85, 85, 85, 0.3);
+    }
+
+    /* Tombol Kembali */
+    form a {
+        background-color: #555;
+        margin-left: 10px;
+    }
+
+    form a:hover {
+        background-color: #333;
+    }
+
+    /* Gaya Waktu Kehadiran (Input datetime-local) */
+    form input[type="datetime-local"] {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background-color: #F5EEDC;
+        color: #555;
+        box-sizing: border-box;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    form input[type="datetime-local"]:focus {
+        border-color: #555;
+        box-shadow: 0 0 5px rgba(85, 85, 85, 0.3);
+        outline: none;
+    }

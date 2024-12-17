@@ -1,0 +1,117 @@
+/* Styling Umum */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #333; /* Warna cream */
+    margin: 0;
+    padding: 20px;
+    color: #333; /* Warna teks utama */
+}
+
+/* Container Form */
+.container {
+    background-color: #e0d8bf;
+    border-radius: 12px;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow halus */
+    color: #333;
+}
+
+/* Header Form */
+.container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+/* Gaya Label */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555; /* Warna teks label */
+}
+
+/* Gaya Input dan Textarea */
+form input[type="text"],
+form input[type="number"],
+form input[type="date"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: #F5EEDC; /* Warna cream */
+    color: #555; /* Warna teks */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Fokus Input */
+form input:focus,
+form textarea:focus,
+form select:focus {
+    border-color: #555; /* Warna border saat fokus */
+    box-shadow: 0 0 5px rgba(85, 85, 85, 0.3); /* Efek glow */
+    outline: none;
+}
+
+/* Gaya Tombol */
+form button,
+form a {
+    display: inline-block;
+    text-align: center;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Tombol Primary (Tambah Data) */
+form .btn-primary {
+    background-color: #333; /* Warna gelap */
+    color: #fff; /* Warna teks putih */
+}
+
+form .btn-primary:hover {
+    background-color: #555; /* Warna abu-abu gelap saat hover */
+    box-shadow: 0 4px 10px rgba(85, 85, 85, 0.3);
+}
+
+/* Tombol Secondary (Kembali) */
+form .btn-secondary {
+    background-color: #555; /* Warna abu-abu */
+    color: #fff; /* Warna teks putih */
+    margin-left: 10px; /* Jarak antar tombol */
+}
+
+form .btn-secondary:hover {
+    background-color: #333; /* Warna lebih gelap saat hover */
+    box-shadow: 0 4px 10px rgba(51, 51, 51, 0.3);
+}
+
+/* Gaya Dropdown */
+form select {
+    background-color: #F5EEDC; /* Warna cream */
+    appearance: none; /* Hilangkan panah default */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23555' d='M2 0L0 2h4z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 12px;
+}
+
+/* Textarea */
+form textarea {
+    resize: none; /* Nonaktifkan resize */
+    height: 100px;
+}

@@ -1,0 +1,103 @@
+/* General Reset */
+body, html {
+  margin: 0;
+  height: auto; /* Memastikan halaman dapat scroll */
+  overflow-y: auto;
+}
+
+/* Video Background */
+#yuriVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Video di belakang konten */
+}
+
+/* Logo di atas */
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px; /* Jarak antara logo dan teks */
+  margin: 10px 0;
+}
+
+.logo-alexandria {
+  width: 50px; /* Ukuran logo di atas */
+  height: auto;
+}
+
+/* Teks judul di atas */
+.school-title {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Navigasi */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  transition: 0.3s ease;
+}
+
+/* Konten tengah */
+.content {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.content .logo-alexandria-large {
+  width: 120px; /* Ukuran logo di bawah */
+  margin-top: 20px;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  font-size: 0.8rem;
+  animation: fadeIn 1.5s ease-in;
+}
+
+/* Animasi sederhana */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

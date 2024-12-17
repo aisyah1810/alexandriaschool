@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Font yang digunakan */
+    background-color: #F5EEDC; /* Warna latar belakang */
+    color: #333; /* Warna teks */
+    margin: 0; /* Menghilangkan margin default */
+    padding: 20px; /* Padding di sekitar konten */
+}
+
+h2 {
+    text-align: center; /* Pusatkan judul */
+    margin-bottom: 20px; /* Jarak bawah judul */
+}
+
+h3 {
+    margin-top: 30px; /* Jarak atas untuk subjudul */
+    margin-bottom: 10px; /* Jarak bawah untuk subjudul */
+}
+
+.tb {
+    width: 100%; /* Lebar tabel 100% */
+    border-collapse: collapse; /* Menghilangkan jarak antara sel */
+    margin-bottom: 20px; /* Jarak bawah tabel */
+}
+
+.tb th, .tb td {
+    border: 1px solid #333; /* Garis batas untuk sel */
+    padding: 10px; /* Jarak dalam sel */
+    text-align: left; /* Rata kiri untuk teks */
+}
+
+.tb th {
+    background-color: #333; /* Warna latar belakang header tabel */
+    color: white; /* Warna teks header tabel */
+}
+
+.tb tr:nth-child(even) {
+    background-color: #f2f2f2; /* Warna latar belakang untuk baris genap */
+}
+
+.tb tr:hover {
+    background-color: #ddd; /* Warna latar belakang saat hover pada baris */
+}
+
+p {
+    text-align: center; /* Pusatkan teks untuk pesan tidak ada hasil */
+    font-size: 16px; /* Ukuran font untuk paragraf */
+}

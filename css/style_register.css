@@ -1,0 +1,93 @@
+/* File: css/style_register.css */
+
+/* Styling untuk body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color:#E4D6BE;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container form registrasi */
+.register-container {
+    background: #F5EEDC;
+    padding: 25px 35px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Judul form */
+.register-container h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Input field */
+.register-container input[type="text"],
+.register-container input[type="password"] {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Placeholder text */
+.register-container input::placeholder {
+    color: #aaa;
+}
+
+/* Tombol submit */
+.register-container button {
+    width: 100%;
+    padding: 12px;
+    background: #333;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Hover efek tombol */
+.register-container button:hover {
+    background: #555;
+}
+
+/* Link kembali ke login */
+.register-container .btn-kembali {
+    display: inline-block;
+    margin-top: 15px;
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Hover efek link */
+.register-container .btn-kembali:hover {
+    color: #333;
+}
+
+/* Pesan kesalahan */
+.register-container p[style="color: red;"] {
+    font-weight: 600;
+}
+
+/* Pesan sukses */
+.register-container p[style="color: green;"] {
+    font-weight: 600;
+}

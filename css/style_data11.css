@@ -1,0 +1,167 @@
+/* Reset margin dan padding pada semua elemen */
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Pengaturan umum untuk body */
+body {
+    margin: 0;
+    background-color: #F5EEDC; /* Warna latar belakang krem */
+}
+
+/* Style untuk navbar */
+.topnav {
+    overflow: hidden;
+    background-color: #333; /* Warna latar belakang navbar */
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2; /* Warna teks */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Ubah warna teks pada hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Styling untuk form pencarian */
+form {
+    margin: 20px 0;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #333;
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #F5EEDC;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+    background-color: #444;
+    transform: scale(1.05);
+}
+
+/* Style untuk kontainer data siswa */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+}
+
+.card {
+    background-color: #F5EEDC;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.card .btn-detail {
+    padding: 8px 15px;
+    background-color: #333;
+    color: #F5EEDC;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.card .btn-detail:hover {
+    background-color: #444;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    padding: 10px;
+    color: #F5EEDC;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .card h3 {
+        font-size: 18px;
+    }
+
+    .card p {
+        font-size: 12px;
+    }
+
+    input[type="text"] {
+        width: 200px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+}

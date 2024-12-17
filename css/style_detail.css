@@ -1,0 +1,138 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5EEDC; /* Latar belakang krem */
+    color: #333; /* Warna teks utama */
+    line-height: 1.8;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #A74A4A; /* Warna judul */
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Detail Container */
+.detail-container {
+    width: 60%;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #fff; /* Warna putih */
+    border: 1px solid #A74A4A; /* Border merah gelap */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.detail-container:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px); /* Sedikit terangkat saat hover */
+}
+
+/* Foto Profil */
+.detail-container img {
+    display: block;
+    margin: 0 auto 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #A74A4A; /* Border merah gelap */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Fields */
+.detail-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #A74A4A; /* Warna label */
+}
+
+.detail-container input,
+.detail-container select,
+.detail-container textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #F5F5F5; /* Warna latar belakang input */
+    color: #333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.detail-container input:focus,
+.detail-container select:focus,
+.detail-container textarea:focus {
+    border-color: #A74A4A;
+    box-shadow: 0 0 5px rgba(167, 74, 74, 0.5); /* Glow lembut */
+    outline: none;
+}
+
+/* Buttons */
+button {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 10px 5px 0 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button[name="edit"] {
+    background-color: #A74A4A; /* Tombol merah gelap */
+}
+
+button[name="edit"]:hover {
+    background-color: #872D2D; /* Merah gelap saat hover */
+    transform: translateY(-2px); /* Sedikit terangkat */
+}
+
+button[name="hapus"] {
+    background-color: #333; /* Tombol abu gelap */
+}
+
+button[name="hapus"]:hover {
+    background-color: #555; /* Abu gelap saat hover */
+    transform: translateY(-2px);
+}
+
+/* Link Kembali */
+a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 6px 6px; /* Ukuran lebih kecil */
+    text-decoration: none;
+    font-size: 15px; /* Font lebih kecil */
+    font-weight: bold;
+    color: #A74A4A; /* Warna teks merah gelap */
+    border: 1.5px solid #A74A4A; /* Border lebih tipis */
+    border-radius: 6px; /* Radius lebih kecil */
+    background-color: transparent; /* Transparan */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+}
+
+a:hover {
+    background-color: #A74A4A; /* Latar belakang merah gelap saat hover */
+    color: #fff; /* Teks putih saat hover */
+    transform: translateY(-1px); /* Efek hover lebih halus */
+}
+

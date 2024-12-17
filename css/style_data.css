@@ -1,0 +1,365 @@
+/*untuk navbar*/
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F5EEDC; /* Warna latar belakang krem */
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/* Styling untuk navbar */
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F5EEDC; /* Warna latar belakang krem */
+}
+
+/* Navigasi */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  transition: 0.3s ease;
+}
+/* Styling untuk form pencarian */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.search-input {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+    border-color: #333;
+    outline: none;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #F5EEDC;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.search-button:hover {
+    background-color: #444;
+    transform: scale(1.05);
+}
+
+/* Style untuk tabel presensi, siswa, guru */
+table.tb {
+    width: 100%; /* Atur agar tabel memenuhi lebar kontainer */
+    max-width: 600px; /* Batas maksimum lebar tabel */
+    border-collapse: collapse;
+    margin: 10px auto; /* Posisikan tabel ke tengah */
+    font-family: Arial, sans-serif;
+    background-color: #F5EEDC;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table.tb th, table.tb td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+    color: #333;
+}
+
+table.tb th {
+    background-color: #333;
+    color: #F5EEDC;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+table.tb tr:nth-child(even) {
+    background-color: #ECE2C6;
+}
+
+table.tb tr:hover {
+    background-color: #E3DAC9;
+    transition: background-color 0.3s ease;
+}
+
+/* Tombol aksi */
+.action-buttons {
+    display: flex;
+    gap: 5px; /* Jarak antara tombol */
+    justify-content: center; /* Agar tombol di tengah */
+}
+.action-buttons a {
+    margin: 0 5px;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #F5EEDC;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.action-buttons a:hover {
+    transform: scale(1.05);
+}
+
+.action-buttons a:first-child {
+    background-color: #333; /* Tombol edit */
+}
+
+.action-buttons a:last-child {
+    background-color: #A74A4A; /* Tombol hapus */
+}
+
+/* Tombol Tambah Data */
+.add-button {
+    background-color: #333; /* Warna hijau untuk tombol tambah */
+    color: #F5EEDC; /* Warna teks */
+    margin: 10px auto; /* Untuk sentris tombol di tengah */
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    max-width: 120px;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.add-button:hover {
+    background-color: #444; /* Warna saat tombol dihover */
+    transform: scale(1.05);
+}
+
+/* Tombol Cetak Data */
+.print-button {
+    background-color: #A74A4A; /* Warna hitam */
+    color: #F5EEDC; /* Warna teks */
+    margin: 10px auto; /* Untuk sentris tombol di tengah */
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    max-width: 120px;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.print-button:hover {
+    background-color: #444; /* Warna saat tombol dihover */
+    transform: scale(1.05);
+}
+
+/* Responsive design untuk tombol dan tabel */
+@media (max-width: 600px) {
+    table.tb, table.tb th, table.tb td {
+        font-size: 12px; /* Perkecil font di layar kecil */
+    }
+
+    .action-buttons a, .add-button, .print-button {
+        font-size: 12px;
+        padding: 6px 10px; /* Perkecil padding tombol di layar kecil */
+    }
+
+    table.tb th, table.tb td {
+        padding: 8px; /* Perkecil padding di dalam sel tabel */
+    }
+}
+
+/* Style the footer */
+.footer {
+    background-color:#333;
+    padding: 10px;
+}
+
+/* Style untuk tabel presensi, siswa, guru */
+table.tb {
+    width: 100%; /* Atur agar tabel memenuhi lebar kontainer */
+    max-width: 600px; /* Batas maksimum lebar tabel */
+    border-collapse: collapse;
+    margin: 10px auto; /* Posisikan tabel ke tengah */
+    font-family: Arial, sans-serif;
+    background-color: #F5EEDC;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table.tb th, table.tb td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+    color: #333;
+}
+
+table.tb th {
+    background-color: #333;
+    color: #F5EEDC;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+table.tb tr:nth-child(even) {
+    background-color: #ECE2C6;
+}
+
+table.tb tr:hover {
+    background-color: #E3DAC9;
+    transition: background-color 0.3s ease;
+}
+
+/* Tombol aksi */
+.action-buttons {
+    display: flex;
+    gap: 5px; /* Jarak antara tombol */
+    justify-content: center; /* Agar tombol di tengah */
+}
+.action-buttons a {
+    margin: 0 5px;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #F5EEDC;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.action-buttons a:hover {
+    transform: scale(1.05);
+}
+
+.action-buttons a:first-child {
+    background-color: #333; /* Tombol edit */
+}
+
+.action-buttons a:last-child {
+    background-color: #A74A4A; /* Tombol hapus */
+}
+
+/* Tombol Tambah Data */
+.add-button {
+    background-color: #333; /* Warna hijau untuk tombol tambah */
+    color: #F5EEDC; /* Warna teks */
+    margin: 10px auto; /* Untuk sentris tombol di tengah */
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    max-width: 120px;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.add-button:hover {
+    background-color: #444; /* Warna saat tombol dihover */
+    transform: scale(1.05);
+}
+
+/* Tombol Cetak Data */
+.print-button {
+    background-color: #A74A4A; /* Warna hitam */
+    color: #F5EEDC; /* Warna teks */
+    margin: 10px auto; /* Untuk sentris tombol di tengah */
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    max-width: 120px;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.print-button:hover {
+    background-color: #444; /* Warna saat tombol dihover */
+    transform: scale(1.05);
+}
+
+/* Kontainer untuk tombol */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Jarak antar tombol */
+}
+
+/* Responsive design untuk tombol dan tabel */
+@media (max-width: 600px) {
+    table.tb, table.tb th, table.tb td {
+        font-size: 12px; /* Perkecil font di layar kecil */
+    }
+
+    .action-buttons a, .add-button, .print-button {
+        font-size: 12px;
+        padding: 6px 10px; /* Perkecil padding tombol di layar kecil */
+    }
+
+    table.tb th, table.tb td {
+        padding: 8px; /* Perkecil padding di dalam sel tabel */
+    }
+}
+
+/* Style the footer */
+.footer {
+    background-color:#333;
+    padding: 10px;
+}

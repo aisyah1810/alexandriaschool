@@ -1,0 +1,143 @@
+/* Reset margin dan padding pada semua elemen */
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Pengaturan umum untuk body */
+body {
+    margin: 0;
+    background-color: #F5EEDC; /* Warna latar belakang krem */
+}
+
+/* Style untuk navbar */
+.topnav {
+    overflow: hidden;
+    background-color: #333; /* Warna latar belakang navbar */
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2; /* Warna teks */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Ubah warna teks pada hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Style untuk form pencarian */
+form {
+    margin: 20px 0;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #333;
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #A74A4A;
+    color: #F5EEDC;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+    background-color: #444;
+    transform: scale(1.05);
+}
+
+/* Style untuk tabel */
+.tb {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #F5EEDC;
+    margin-top: 20px;
+}
+
+.tb th, .tb td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.tb th {
+    background-color: #333;
+    color: white;
+}
+
+.tb tr:hover {
+    background-color: #f1f1f1;
+}
+/* Tombol Tambah Data */
+.add-button {
+    background-color: #333; /* Warna latar belakang tombol */
+    color: #F5EEDC; /* Warna teks tombol */
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.add-button:hover {
+    background-color: #444; /* Warna latar belakang saat hover */
+    transform: scale(1.05); /* Efek pembesaran saat hover */
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    padding: 10px;
+    color: #F5EEDC;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .tb {
+        width: 100%;
+        overflow-x: scroll;
+    }
+
+    .tb th, .tb td {
+        padding: 8px;
+    }
+
+    input[type="text"] {
+        width: 200px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+}

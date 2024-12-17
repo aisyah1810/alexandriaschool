@@ -1,0 +1,39 @@
+/* Styling untuk Form Pencarian yang ada di home */
+.search-section {
+    margin-top: 20px;
+    padding: 15px;
+}
+
+.search-input {
+    width: 30%;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px; /* Membuat input lebih melengkung */
+    font-size: 16px;
+    margin-right: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+    border-color: #fff;
+    outline: none;
+}
+
+.search-button {
+    width: 80px; /* Lebar tombol lebih kecil */
+    padding: 5px 10px; /* Tinggi tombol lebih kecil */
+    background-color: #333; /* Tetap dengan warna #333 */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px; /* Ukuran teks lebih kecil */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+
+.search-button:hover {
+    background-color: #E3DAC9; /* Warna lebih gelap saat hover */
+    transform: scale(1.05);
+}
